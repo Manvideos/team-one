@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background: #eee; }
+
+header {
+  padding: 2%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem; }
+
+.bg {
+  color: #9F7944;
+  border-bottom: 2px solid #9F7944; }
+
+ul {
+  margin-top: 2px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%; }
+  ul li {
+    width: 50%;
+    text-align: center;
+    color: #666;
+    font-size: 12px; }
+
+div {
+  width: 50%;
+  margin: 150px auto;
+  color: #666;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 30px; }
+  div img {
+    max-width: 80%; }
+
+/*# sourceMappingURL=shopping.css.map */

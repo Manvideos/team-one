@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no, email=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body ng-controller="myCtrl">
+<div id="box">
+    <header>
+        <p style="font-size: 2.4rem">品牌馆</p>
+    </header>
+
+    <footer>
+        <ul class="footer_ul">
+            <li><a href="index.html"><img src="img/1_01.png" alt=""></a><p>租组匣</p></li>
+            <li><a href=""><img src="img/11.png" alt=""></a><p style="color: #B5824C;">品牌馆</p></li>
+            <li><a href="../community/GCX/Gmeiribikan/index.html"><img src="img/1_03.png" alt=""></a><p>社区</p></li>
+            <li><a href="../yichu/wardrobe01.html"><img src="img/1_32.png" alt=""></a><p>我的衣橱</p></li>
+            <li><a href="../group/index.html"><img src="img/1_34.png" alt=""></a><p>我的</p></li>
+        </ul>
+    </footer>
+</div>
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/angular.min.js"></script>
+<script>
+    var app = angular.module("myApp",[]);
+    app.controller("myCtrl",function($scope,$location,$http){
+        $http.get("js/ind.json").success(function(data){
+            console.log(data);
+            $scope.datas= data;
+        });
+    });
+
+</script>
+</html>

@@ -1,0 +1,142 @@
+<style>
+
+    html, body, #big {
+        height: 100%; }
+
+    #big {
+        display: flex;
+        flex-flow: column; }
+
+    a {
+        text-decoration: none;
+        color: #666; }
+
+    #head {
+        /*width: 100%;*/
+        /*height: 300px;*/
+        position: relative; }
+    #head a:nth-child(1) {
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        z-index: 2;
+        font-size: 1.2rem; }
+    #head img:nth-child(2) {
+        width: 100%;
+        opacity: 0.2; }
+    #head img:nth-child(3) {
+        border-radius: 100%;
+        border: 1px solid #fff;
+        width: 45%;
+        height: 45%;
+        position: absolute;
+        top: 26%;
+        left: 30%; }
+
+    #box {
+        height: 100%;
+        overflow: hidden; }
+
+    nav {
+        border-bottom: 5px solid #ccc; }
+    nav ul:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+        border-bottom: 1px solid #ccc; }
+    nav ul:nth-child(1) li {
+        width: 33%;
+        text-align: center;
+        font-size: 13px;
+        color: #666; }
+    nav ul:nth-child(1) li img {
+        max-width: 50%;
+        height: 50%; }
+    nav ul:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 0; }
+    nav ul:nth-child(2) li {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        letter-spacing: 1px;
+        color: #666; }
+    nav ul:nth-child(2) li p {
+        font-size: 12px; }
+    nav ul:nth-child(2) li img {
+        width: 80%;
+        height: 80%; }
+    nav ul:nth-child(2) li:nth-child(1) {
+        border-right: 1px solid #ccc; }
+
+    main {
+        padding: 2%; }
+    main p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding: 3% 0;
+        border-bottom: 1px solid #ccc; }
+    main p img {
+        width: 2%; }
+</style>
+
+<div id="big">
+    <header style="height:0;!important;"></header>
+    <div id="head">
+        <a onclick="window.location.href='../group/sheZhi.html'">设置</a>
+        <img src="images/1_05.jpg"/>
+        <img src="images/1_05.jpg"/>
+    </div>
+<div id="box">
+    <div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../group/shiMing.html">
+                        <img src="images/1_11.png"/>
+                        <p>优惠券</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../group/shopping.html">
+                        <img src="images/1_13.png"/>
+                        <p>租衣记录</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../group/xinYu.html">
+                        <img src="images/1_15.png"/>
+                        <p>我的信誉</p>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="nav_txt">
+                        <h5>邀请好友</h5>
+                        <p>邀请好友获奖励</p>
+                    </div>
+                    <a href="../group/yaoQing.html"><img src="images/1_21.png"/></a>
+                </li>
+                <li>
+                    <div class="nav_txt">
+                        <h5>获取奖励</h5>
+                        <p>获取积分与优惠券</p>
+                    </div>
+                    <a href="../group/huoJiang.html"><img src="images/1_21.png"/></a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a href="../group/location.html"><p><span>我的地址</span><img src="images/1_21.png"/></p></a>
+            <a href="../group/addLoca.html"><p><span>支付记录</span><img src="images/1_21.png"/></p></a>
+            <a href="../group/geRen.html"><p><span>个人信息</span><img src="images/1_21.png"/></p></a>
+            <a href="../group/name.html"><p><span>实名认证</span><img src="images/1_21.png"/></p></a>
+        </main>
+    </div>
+</div>
+</div>

@@ -1,0 +1,38 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="banner swiper-slide"><img src="img/1_09.png" alt=""></div>
+        <div class="banner swiper-slide"><img src="img/02.png" alt=""></div>
+        <div class="banner swiper-slide"><img src="img/04.png" alt=""></div>
+        <div class="banner swiper-slide"><img src="img/06.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<nav>
+    <ul>
+        <li ng-repeat="items in datas.nav"><a href="">{{items.name}}</a></li>
+    </ul>
+</nav>
+<div class="content" ng-repeat="items in datas.fashion">
+    <a href="" class="div_left" >
+        <div>
+            <span style="font-size: 1.6rem">{{items.title}}</span>
+            <p style="color:#ff6633;font-size: 1.1rem;">{{items.content}}<span class="spans"></span></p>
+        </div>
+        <p><img ng-src="img/{{items.img}}" alt=""></p>
+    </a>
+    <a href="../home/shaitu.html" class="div_right" ng-repeat="items in datas.fashions">
+        <div>
+            <span style="font-size: 1.6rem">{{items.title}}</span>
+            <p style="color:#ff6633;font-size: 1.1rem">{{items.content}}<span class="spans"></span></p>
+        </div>
+        <p><img ng-src="img/{{items.img}}" alt=""></p>
+    </a>
+</div>
+<section>
+    <div><span style="font-size: 1.8rem">穿搭推荐</span>&nbsp;&nbsp;&nbsp;<span style="font-size: 1.4rem">OUTFIT IDEAS</span></div>
+    <div class="new_file" >
+        <ul class="oul">
+            <li ng-repeat="items in datas.img"><img ng-src="img/{{items.src}}" alt=""></li>
+        </ul>
+    </div>
+</section>

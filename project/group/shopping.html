@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no, email=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="shopping.css"/>
+        <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/angular-route1.4.5.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body ng-controller="con">
+		<header>
+			<a onclick="window.history.back()"><</a>
+			<span class="bg" ng-click="fun('/a')">已租过</span>
+			<span ng-click="fun('/b')">已购买</span>
+			<a style="visibility: hidden;"><</a>
+		</header>
+		
+		<ng-view></ng-view>
+		
+	</body>
+	<script type="text/javascript">
+		var app=angular.module("app",["ngRoute"]);
+		app.controller("con",function($scope,$location){
+			$scope.fun=function(url){
+				$location.path(url);
+			}
+		})
+		app.config(function($routeProvider){
+			$routeProvider
+				.when("/a",{
+					template:"<ul><li style='border-right: 1px solid #ccc;'><p>租衣件数</p><p>0</p></li><li><p>总价格</p><p>￥0</p></li></ul><div><img src='images/4_03.png'/><p>你还没有租凭过衣服</p></div>"
+				})
+				.when("/b",{
+					template:"<div style='margin:207px auto;'><img src='images/4_03.png'/><p>你还没有购买过衣服</p></div>"
+				})
+				.otherwise({
+					redirectTo:"/a"
+				})
+		})
+		
+		$("header span").click(function(){
+			$(this).addClass("bg");
+			
+			$(this).siblings().removeClass("bg");
+		})
+	</script>
+</html>

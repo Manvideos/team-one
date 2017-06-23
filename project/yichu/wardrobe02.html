@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>wardrobe</title>
+    <link rel="stylesheet" href="css/wardrobe02.css">
+</head>
+<body ng-controller="myctrl">
+<!--header-->
+<div id="header"><a onclick="window.history.back(-1)">
+    <div class="left-back"></div>
+</a>
+    荷叶领背心上衣
+</div>
+<!--wrap-box-->
+<div id="wrapper">
+    <!--box-->
+    <div id="box">
+        <!---->
+        <div class="main" ng-repeat="a in list">
+            <div class="mian-img">
+                <a href="javascript:;"><img src="img/{{a.img}}"></a>
+                <p class="mian-tit">
+                    <a href="javascript:;" ng-repeat="b in a.p1" ><span>{{b.span1}}{{b.span2}}{{b.span2}}{{b.span3}}</span></a>
+                </p>
+            </div>
+            <div class="main-btn">
+                <a href="wardrobe01.html">
+                    <div>加入我的衣橱</div>
+                </a>
+                <a href="wardrobe03.html">
+                    <div>直接租赁</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/iscroll.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script>
+    var app = angular.module("app", []);
+    app.controller("myctrl", function ($scope, $http) {
+        $http.get("data/wardrove02.json").success(function (data) {
+//            console.log(data)
+            $scope.list = data;
+        })
+    })
+    document.addEventListener("touchmove",function (ev) {
+        ev.preventDefault();
+    },{passive:false});
+    var myIscroll = new IScroll('#wrapper',{
+        click: true,
+        tap: true
+    });
+    setTimeout(function () {
+        myIscroll.refresh();
+    },500)
+</script>
+</body>
+</html>

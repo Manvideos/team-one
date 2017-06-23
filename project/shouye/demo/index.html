@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        html,body,#box{
+            height:100%;
+        }
+        #box{
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            height:100%;
+            overflow: hidden;
+        }
+        header{
+            text-align: center;
+            line-height: 5rem;
+            font-size: 2rem;
+            color:#fff;
+        }
+        header,footer{
+            height:5rem;
+            background: palevioletred;
+        }
+        .content>li{
+            height:5rem;
+            border-bottom: 1px solid #999;
+            line-height: 3rem;
+        }
+        footer ul{
+            display: flex;
+        }
+        footer ul>li{
+            width:20%;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 5rem;
+        }
+    </style>
+</head>
+<body ng-controller="myCtrl">
+    <div id="box">
+        <header>租租匣</header>
+        <main>
+            <div>
+               <ng-view></ng-view>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li ng-click="btn('/first')">租租匣</li>
+                <li ng-click="btn('/second')">品牌馆</li>
+                <li ng-click="btn('/third')">社区</li>
+                <li ng-click="btn('/forth')">我的衣橱</li>
+                <li ng-click="btn('/fifth')">我的</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route1.4.5.js"></script>
+    <script src="js/iscroll-probe.js"></script>
+    <script src="contrller.js"></script>
+    <script>
+
+        var app = angular.module("myApp",['ngRoute','first']);
+        app.config(function($routeProvider){
+
+            $routeProvider
+                    .when("/first",{
+                        templateUrl:"first.html",
+                        controller:"first_con"
+                    })
+                    .when("/second",{
+                        templateUrl:"second.html",
+                        controller:"first_con"
+                    })
+                    .when("/third",{
+                        templateUrl:"third.html",
+                        controller:"first_con"
+                    })
+                    .when("/forth",{
+                        templateUrl:"forth.html",
+                        controller:"first_con"
+                    })
+                    .when("/fifth",{
+                        templateUrl:"fifth.html",
+                        controller:"first_con"
+                    })
+                    .otherwise({
+                        redirectTo:"/first"
+                    })
+        });
+        app.controller("myCtrl",function($scope,$location){
+                    $scope.btn = function(url){
+                        $location.path(url)
+                    }
+        })
+    </script>
+</body>
+</html>

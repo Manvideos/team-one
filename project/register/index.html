@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+        <header id="first_head">
+                <a style="visibility: hidden">注册</a>
+                <span id="register">登录</span>
+                <a href="zhuce.html" id="login">注册</a>
+        </header>
+        <main>
+            <div class="logo">
+                <img src="../img/a_03.png" alt="">
+            </div>
+            <div class="form">
+                <div class="form_phone"><span class="iconfont icon-user"></span><input type="text" placeholder="请输入手机号" id="phone"></div>
+                <div class="form_pass"><span class="iconfont icon-click" id="eye"></span><input type="password" placeholder="请输入密码" id="password"></div>
+                <p class="wjma"><a href="password.html">忘记密码？</a></p>
+                <button id="btn">登录</button>
+
+            </div>
+        </main>
+        <footer>
+            <div class="kuaiJ">
+                <p></p>
+                <span>快捷登录</span>
+                <p></p>
+            </div>
+            <div class="footer_ul">
+                <a href="#">
+                    <img src="../img/wx_03.png" alt="">
+                    <p>微信</p>
+                </a>
+                <a href="#">
+                    <img src="../img/qq_03.png" alt="">
+                    <p>QQ</p>
+                </a>
+            </div>
+        </footer>
+        <script src="../js/zepto.min.js"></script>
+        <script type="text/javascript"></script>
+        <script>
+            $(function(){
+                $("#btn").click(function(){
+                    reg = /^[1][34578]\d{9}$/;
+                    reg1 = /^[1][0-9]{10}$/;
+                    if (phone.value == "" || password.value == "") {
+                        alert("信息不能为空")
+                    }else if (!reg1.test(phone.value) && !reg.test(password.value)) {
+                        alert("信息格式错误")
+                    }else{
+                        window.location.href = "../shouye/index.html";
+                    }
+                });
+                var t = false;
+                $("#eye").click(function(){
+                    if(t==true){
+                        $("#password")[0].type = "number"+"string";
+                        t = false;
+                    }else{
+                        $("#password")[0].type = "password";
+                        t = true;
+                    }
+                });
+            })
+        </script>
+</body>
+</html>

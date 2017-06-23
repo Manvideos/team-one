@@ -1,0 +1,116 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:"微软雅黑";
+    font-size:1rem;
+    color:#7B7B7B;
+}
+header{
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-around;
+    padding:.2rem 0;
+    background:#fff;
+    position:fixed;
+    top:0;
+    >span{
+        width:60%;
+        text-align:center;
+        font-size:1.6rem
+    }
+}
+section{
+    margin-top:2rem;
+    background:#F5F5F5;
+    >#banner{
+        width:100%;
+        >img{
+            width:100%;
+            margin-bottom:1rem;
+        }
+    }
+    >ul{
+        width:95%;
+        margin:0 auto;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-between;
+        >li:nth-child(1){
+            width:45%;
+            >img{
+                width:20%;
+                float:left;
+            }
+        }
+        >li{
+            font-size:.2rem;
+            >img{
+                width:40%;
+                height:70%;
+                float:left;
+                
+            }
+        }
+        
+    }
+    >ol{
+        width:95%;
+        margin:0 auto;
+        padding:.6rem 0;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-between;
+        border-bottom:1px solid #7B7B7B;
+        >li:first-child{
+            padding:.2rem 0;
+            width:60%;
+            font-size:.8rem;
+        }
+    }
+    
+}
+footer{
+    font-size:.6rem;
+    width:95%;
+    margin:0 auto;
+    p{
+        
+        >span{
+            color:blue;
+        }
+    }
+}
+#black{
+    width:100%;
+    height:80%;
+    background:black;
+    opacity:0.2;
+    position:absolute;
+    top:0;
+    display:none;
+}
+body{
+    >ul{
+        display:none;
+        width:100%;
+        height:20%;
+        background:#fff;
+        position:absolute;
+        bottom:0;
+        >li{
+            padding:.6rem 0;
+            text-align:center;
+            border:1px solid #CCCCCC;
+            >a{
+                text-decoration:none;
+                display:block;
+                width:100%;
+                height:100%;
+                
+            }
+        }
+    }
+}

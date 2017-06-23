@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title></title>
+		<script src="../插件/iscroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="index3-1.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<header>
+			<nav>
+				<a href="index3.html"><img src="images/h1.png"/></a>
+				<p>问答详细</p>
+				<img src="images/h2.png" alt="" />
+			</nav>
+		</header>
+		<main>
+			<div>
+		  <section class="sec1">
+		  	<div class="secdiv1">
+		  		<img src="images/t2.png" alt="" /><span>人****放</span>
+		  	</div>
+		  	<div class="secdiv2">
+		  		<p>2016-05-15&nbsp;&nbsp;&nbsp;55人浏览&nbsp;&nbsp;&nbsp;&nbsp;15人觉得很赞</p>
+		  		<img src="images/sce4.png" alt="" />
+		  	</div>
+		  	<div class="secdiv3">
+		  		<p>掌柜回复：谢谢亲的大力支持，欢迎下次再来</p>
+		  	</div>
+		  	<p class="ppx"><img src="images/sce3.png" class="ppximg"/>&nbsp;<a href="index3-2.html"><span>全部评论</span></a></p>
+		  	</div>
+		  	
+		  </section>
+				
+		</main>
+		<footer>
+			<div>
+				<img src="images/ff1.png" alt="" />
+				<p>评论</p>
+			</div>
+				<div>
+				<img src="images/ff2.png" alt="" />
+				<p>点赞</p>
+			</div>
+		</footer>
+		</div>
+			<script>
+				document.addEventListener("touchmove",function (ev) {
+					ev.preventDefault();
+				},{passive:false});
+			var myScroll=new IScroll("main",{
+				click:true,
+				tap:true
+			})
+			
+		</script>
+	</body>
+</html>

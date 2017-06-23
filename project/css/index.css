@@ -1,0 +1,137 @@
+@charset "UTF-8";
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%;
+  font-family: "微软雅黑"; }
+
+#first_head, #zhuce {
+  padding: 0 20px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#register {
+  font-size: 2.6rem; }
+
+#login {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  color: #333; }
+
+main {
+  padding: 0 20px; }
+
+.logo {
+  height: 100px;
+  text-align: center;
+  margin-top: 8%; }
+  .logo > img {
+    max-height: 100%; }
+
+.form {
+  width: 80%;
+  margin: 0 auto; }
+
+.phone_P {
+  height: 30px; }
+
+.form_phone, .form_pass {
+  width: 100%;
+  border-bottom: 1px solid #999; }
+
+#phone, #password {
+  height: 3rem;
+  outline: none;
+  border: 0;
+  margin-top: 4%;
+  text-indent: 1em;
+  width: 55%; }
+
+::-webkit-input-placeholder {
+  font-size: 1.4rem; }
+
+.wjma {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0; }
+  .wjma > a {
+    font-size: 1.6rem;
+    color: #999; }
+    .wjma > a:hover {
+      text-decoration: underline; }
+
+#btn, #yz {
+  display: block;
+  width: 93%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #AB8555;
+  -webkit-border-radius: 5px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 2rem; }
+
+footer {
+  padding: 0 20px;
+  margin-top: 12%; }
+
+.kuaiJ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .kuaiJ > p {
+    border-bottom: 1px solid #666;
+    width: 35%; }
+  .kuaiJ > span {
+    font-size: 1.6rem; }
+
+.footer_ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem; }
+  .footer_ul > a {
+    display: block;
+    height: 50px;
+    text-align: center;
+    width: 25%; }
+    .footer_ul > a > p {
+      color: #333;
+      border: 0; }
+    .footer_ul > a > img {
+      max-height: 100%; }
+
+#zhuce > a {
+  font-size: 3.5rem;
+  color: #333;
+  margin: 0;
+  padding: 0; }
+#zhuce > span {
+  font-size: 2.6rem; }
+
+#yz {
+  width: 30%;
+  font-size: 1.4rem;
+  display: inline-block; }
+
+#success {
+  height: 150px;
+  width: 100%;
+  margin-top: 3rem;
+  text-align: center; }
+  #success > img {
+    height: 100%; }
+  #success > p {
+    font-size: 1.6rem;
+    margin-top: 3rem; }
+
+/*# sourceMappingURL=index.css.map */

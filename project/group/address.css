@@ -1,0 +1,47 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem; }
+
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem; }
+
+main {
+  padding: 2%;
+  position: relative; }
+  main div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc; }
+    main div input {
+      text-align: right;
+      border: none;
+      outline: none; }
+  main button {
+    border: none;
+    width: 90%;
+    padding: 2% 0;
+    color: #fff;
+    background: #9F7944;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 400px;
+    left: 5%; }
+
+/*# sourceMappingURL=address.css.map */

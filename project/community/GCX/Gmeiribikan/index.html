@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>每日必看</title>
+		<link rel="stylesheet" href="scss.css" />
+		<script src="../插件/iscroll.js"></script>
+		<style>
+			html{
+				font-size: 62.5%;
+				font-family: "微软雅黑";
+			}
+			footer {
+				border-top:1px solid #eee;
+				height:5rem;
+			}
+			.footer_ul{
+				display: flex;
+				height:100%;
+			}
+			.footer_ul>li{
+				 width:20%;
+				 text-align: center;
+				 height:55%;
+				list-style: none;
+				margin-top: 5px;
+			}
+			.imgs{
+				height:100%;
+			}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="box">
+			
+		
+		<header>
+			<nav><img src="img1/search.png" alt="" class="yin" /><p style="font-size: 2.4rem;">每日必看</p><img src="img1/search.png" alt="" /></nav>
+		</header>
+
+
+		<footer>
+			<ul class="footer_ul">
+				<li><a href="../../../shouye/index.html"><img src="img1/1_01.png" class="imgs"/></a><p>租租匣</p></li>
+				<li><a href="../../../shouye/pinpai.html"><img src="img1/1_02.png" class="imgs"/></a><p>品牌馆</p></li>
+				<li><a href="" ><img src="img1/f3.png" class="imgs"/></a><p style="color: #B5824C;">社区</p></li>
+				<li><a href="../../../yichu/wardrobe01.html"><img src="img1/f4.png" class="imgs"/></a><p>我的衣橱</p></li>
+				<li><a href="../../../group/index.html"><img src="img1/f5.png" class="imgs"/></a><p>我的</p></li>
+			</ul>
+		</footer>
+
+		</div>
+		<script src="../插件/angular.min.js"></script>
+		<script src="../插件/angular-route1.4.5.js"></script>
+		<script>
+			document.addEventListener("touchmove",function (ev) {
+				ev.preventDefault();
+			},{passive:false});
+		function tiao(){
+			window.location.href="../Gwendaxiangxi/index1.html"
+		}
+		function tiao1(){
+			window.location.href="../Gwendaxiangxi/index2.html"
+		}
+		
+		function zhuan(){
+			window.location.href="../Gwendaxiangxi/index3.html"
+		}
+		function zhuan1(){
+			window.location.href="../Gwendaxiangxi/index.html"
+		}
+			var myScroll=new IScroll("main",{
+				click:true,
+				tap:true
+			})
+			var app = angular.module("myApp",[])
+			app.controller("myCtrl",function($scope,$http){
+				$http.get("ind.json").success(function(data){
+					console.log(data)
+					$scope.datas = data;
+				})
+
+			})
+		</script>
+	</body>
+</html>

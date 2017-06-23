@@ -1,0 +1,124 @@
+#box {
+
+}
+
+a {
+    color: #333333;
+}
+
+.main-top {
+    margin: 0.5rem 0;
+    height: 11rem;
+    background: #fff;
+}
+
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box-p {
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.box-p > span:last-child {
+    float: right;
+}
+
+.main-h1 > a {
+    font-size: 1.75rem;
+    padding-right: 0.5rem;
+}
+
+.main-tit > a {
+    font-size: 1.5rem;
+    color: #A7A7A7;
+    padding-right: 0.5rem;
+}
+
+.main-yuan {
+    width: 5rem;
+    height: 5rem;
+    border: 1px dotted #989898;
+    border-radius: 50%;
+    color: #989898;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.main-center {
+    background: #fff;
+}
+
+.box-p-bor {
+    border-top: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.main-btn {
+    width: 4rem;
+    height: 2.2rem;
+    background: #B4B4B4;
+    border-radius: 1.5rem;
+}
+
+.mian-btn0 {
+    margin: 0.1rem 0;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: -1px 0px 1px 1px #000000;
+}
+
+.main-btn-on .mian-btn0 {
+    transform: translateX(2rem)
+}
+
+.dis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    background: #fff;
+}
+
+.list-quan {
+    border: 1px solid #6B6B6B;
+    border-radius: 5rem;
+    padding: 0.4rem 1rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background: #F6F6F6;
+}
+
+.list-top {
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.list li {
+    width: 48%;
+    margin-top: 0.5rem;
+}
+
+.list li img {
+    width: 100%;
+}
+
+.list li p {
+    line-height: 2rem;
+}
+.list span{
+    padding: 0 0.5rem;
+}

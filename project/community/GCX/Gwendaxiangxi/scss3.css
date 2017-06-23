@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%; }
+  header nav {
+    background: #fff;
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center; }
+    header nav img {
+      height: 60%; }
+    header nav p {
+      font-size: 25px; }
+
+main {
+  margin-top: 80px;
+  margin-bottom: 100px; }
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 60px; }
+  footer div {
+    background: #B5804B;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    footer div img {
+      margin-right: 10px;
+      height: 60%; }
+    footer div p {
+      color: #fff;
+      font-size: 22px; }
+
+.neidiv {
+  background: #eee;
+  padding-bottom: 5px;
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around; }
+  .neidiv img {
+    height: 80px;
+    width: 25%;
+    margin-top: 5px; }
+  .neidiv div {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around; }
+
+.sec1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee; }
+  .sec1 .pinzan {
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: row; }
+    .sec1 .pinzan p {
+      margin-right: 5px;
+      text-align: center;
+      width: 40px;
+      color: #fff;
+      padding: 0px 5px;
+      border-radius: 10px;
+      background: #B5804B; }
+
+.sec2 .sec2div1 {
+  display: flex;
+  justify-content: space-around; }
+  .sec2 .sec2div1 .firstimg {
+    margin-top: 10px;
+    height: 40px; }
+  .sec2 .sec2div1 .div {
+    width: 85%;
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around; }
+    .sec2 .sec2div1 .div span {
+      font-size: 13px; }
+  .sec2 .sec2div1 .lastimg {
+    width: 45%; }
+
+.sec3 .sec2div1 {
+  display: flex;
+  justify-content: space-around; }
+  .sec3 .sec2div1 .firstimg {
+    margin-top: 10px;
+    height: 40px; }
+  .sec3 .sec2div1 .div {
+    width: 85%;
+    height: 130px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around; }
+    .sec3 .sec2div1 .div span {
+      font-size: 13px; }
+
+html, body, #box {
+  height: 100%; }
+
+#box {
+  display: flex;
+  flex-flow: column; }
+
+main {
+  overflow: hidden;
+  height: 100%; }
+
+/*# sourceMappingURL=scss3.css.map */

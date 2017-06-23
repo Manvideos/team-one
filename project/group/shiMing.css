@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑"; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem; }
+
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem; }
+
+#p {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between; }
+  #p input {
+    width: 70%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc; }
+  #p button {
+    border: none;
+    padding: 1% 2%;
+    color: #fff;
+    background: #9F7944; }
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 1%;
+  border-bottom: 1px solid #ccc;
+  line-height: 25px; }
+  main p {
+    color: #666;
+    font-size: 1.2rem; }
+    main p span {
+      font-size: 1.5rem;
+      color: red; }
+  main img {
+    width: 20%;
+    height: 40%; }
+  main div {
+    width: 60%;
+    padding: 2%; }
+
+/*# sourceMappingURL=shiMing.css.map */

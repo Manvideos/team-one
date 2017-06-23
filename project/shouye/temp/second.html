@@ -1,0 +1,48 @@
+<style>
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ps{
+        background:#FFDEC3;
+        text-align: center;
+        font-size: 1.8rem;
+        padding:2px;
+        margin-top: -4px;
+    }
+    .wrapper>div>img{
+        width:100%;
+    }
+    .new{
+        position: relative;
+    }
+    .new>a{
+        background:#90928F;
+        width:100px;
+        height:25px;
+        text-align: center;
+        position: absolute;
+        top:0;
+        line-height: 25px;
+        border-radius: 0 0 10px 0;
+        display: block;
+    }
+</style>
+<main ng-repeat="items in datas.arr">
+    <div class="wrapper">
+        <div>
+            <img ng-src="img/{{items.banner}}" alt="" >
+        </div>
+        <div class="new">
+            <img ng-src="img/{{items.banner1}}" alt="">
+            <a href="meil/meili.html">全新入驻</a>
+        </div>
+        <p class="ps">{{items.span}}</p>
+        <div>
+            <img ng-src="img/{{items.banner2}}" alt="">
+        </div>
+        <p class="ps" style="background:#D6D4D5;">{{items.span2}}</p>
+    </div>
+</main>

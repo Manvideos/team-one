@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <!--<link rel="stylesheet" href="css/wardrobe.css">-->
+    <link rel="stylesheet" href="css/wardrobe01.css">
+    <link rel="stylesheet" href="css/scss.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+    	.colo{color: #B5824C;}
+    </style>
+</head>
+<body ng-controller="myCtrl">
+<div id="box">
+    <header id="head" style="background:#fff;">
+        <div class="div1">
+            <img src="img/1_03(1).png" alt="">
+            <p style="font-size: 2.4rem;">租租匣</p>
+            <img src="img/1_05(1).png" style="width: 10%;height: 10%;" onclick="window.location.href='../home/search.html'">
+        </div>
+        <div>品牌馆</div>
+        <div>每日必看</div>
+        <div>我的衣橱</div>
+        <div>我的</div>
+    </header>
+    <main class="wrapper">
+        <div>
+            <ng-view></ng-view>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer_ul">
+            <li ng-click="btn('/first')" id="f1"><a><img src="img/footer11.png" alt=""></a><p >租组匣</p></li>
+            <li ng-click="btn('/second')" id="f2"><a><img src="img/footer2.png" alt=""></a><p>品牌馆</p></li>
+            <li ng-click="btn('/third')"id="f3"><a><img src="img/footer3.png" alt=""></a><p>社区</p></li>
+            <li ng-click="btn('/four')"id="f4"><a><img src="img/footer4.png" alt=""></a><p>我的衣橱</p></li>
+            <li ng-click="btn('/fifth')"id="f5"><a><img src="img/footer5.png" alt=""></a><p>我的</p></li>
+        </ul>
+    </footer>
+</div>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route1.4.5.js"></script>
+<script src="controller/first.js"></script>
+<script src="controller/third.js"></script>
+<script src="controller/four.js"></script>
+
+
+    <script>
+      $("#f1").addClass("colo")
+     $("#f1").click(function(){
+     	$(".footer_ul li").removeClass("colo")
+     	$(this).addClass("colo")
+     
+     	$("#f1 img")[0].src="img/footer11.png";
+     	$("#f2 img")[0].src="img/footer2.png";
+     	$("#f3 img")[0].src="img/footer3.png";
+     	$("#f4 img")[0].src="img/footer4.png";
+     	$("#f5 img")[0].src="img/footer5.png";
+     	
+     })
+          $("#f2").click(function(){
+        $(".footer_ul li").removeClass("colo")
+     	$(this).addClass("colo")
+     	$("#f1 img")[0].src="img/footer1.png";
+     	$("#f2 img")[0].src="img/footer12.png";
+     	$("#f3 img")[0].src="img/footer3.png";
+     	$("#f4 img")[0].src="img/footer4.png";
+     	$("#f5 img")[0].src="img/footer5.png";
+     	
+     })
+
+        $("#f3").click(function(){
+        $(".footer_ul li").removeClass("colo")
+     	$(this).addClass("colo")
+     	$("#f1 img")[0].src="img/footer1.png";
+     	$("#f2 img")[0].src="img/footer2.png";
+     	$("#f3 img")[0].src="img/footer13.png";
+     	$("#f4 img")[0].src="img/footer4.png";
+     	$("#f5 img")[0].src="img/footer5.png";
+     	
+     })
+        $("#f4").click(function(){
+        $(".footer_ul li").removeClass("colo")
+     	$(this).addClass("colo")	
+     	$("#f1 img")[0].src="img/footer1.png";
+     	$("#f2 img")[0].src="img/footer2.png";
+     	$("#f3 img")[0].src="img/footer3.png";
+     	$("#f4 img")[0].src="img/footer14.png";
+     	$("#f5 img")[0].src="img/footer5.png";
+     	
+     })
+        $("#f5").click(function(){
+        $(".footer_ul li").removeClass("colo")
+     	$(this).addClass("colo")  	
+     	$("#f1 img")[0].src="img/footer1.png";
+     	$("#f2 img")[0].src="img/footer2.png";
+     	$("#f3 img")[0].src="img/footer3.png";
+     	$("#f4 img")[0].src="img/footer4.png";
+     	$("#f5 img")[0].src="img/footer15.png";
+     	
+     })
+       
+    
+        $(function(){
+            $("header>div").css({"display":" flex","justify-content": "space-between",
+                "align-items": "center","font-size":"2.4rem"});
+            $("header div:not(:first)").css({"justify-content":"center"});
+            $("header>div").hide();
+            $("header>div").eq(0).show();
+            $("footer li").click(function(){
+                var $ind = $(this).index();
+                $("header>div").eq($ind).show();
+                $("header>div").eq($ind).siblings().hide();
+
+            });
+            $("footer li").eq(4).click(function(){
+                $("header>div").eq(0).hide();
+            })
+
+        });
+        var app = angular.module("myApp",['ngRoute','first','third','four']);
+        app.config(function($routeProvider){
+            $routeProvider
+                    .when("/first",{
+                        templateUrl:"temp/first.html",
+                        controller:"first_con"
+                    })
+                    .when("/second",{
+                        templateUrl:"temp/second.html"
+                    })
+                    .when("/third",{
+                        templateUrl:"temp/third.html",
+                        controller:"third_con"
+                    })
+                    .when("/four",{
+                        templateUrl:"temp/four.html",
+                        controller:"four_con"
+                    })
+                    .when("/fifth",{
+                        templateUrl:"temp/fifth.html",
+                        controller:"four_con"
+                    })
+                    .otherwise({
+                        redirectTo:"/first"
+                    })
+        });
+        app.controller("myCtrl",function($scope,$location,$http){
+            $http.get("js/ind.json").success(function(data){
+                console.log(data);
+                $scope.datas= data;
+            });
+            $scope.btn = function(url){
+                $location.path(url)
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background: #eee; }
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem; }
+
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  background: #fff; }
+
+main img {
+  width: 100%;
+  display: block; }
+main ul {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 2%; }
+  main ul li {
+    width: 50%;
+    text-align: center;
+    color: #666; }
+    main ul li p:nth-child(1) {
+      font-size: 13px;
+      color: #666; }
+    main ul li p:nth-child(2) {
+      font-size: 12px;
+      color: #ccc; }
+      main ul li p:nth-child(2) span {
+        font-size: 15px;
+        color: #9F7944; }
+main div {
+  width: 45%;
+  margin: 50px auto;
+  line-height: 30px;
+  text-align: center; }
+  main div p {
+    color: #666;
+    font-size: 1.3rem; }
+
+/*# sourceMappingURL=yaoQing.css.map */

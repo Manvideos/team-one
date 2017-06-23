@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>晒图</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+		<link rel="stylesheet" href="style/shaitu.css" />
+	</head>
+	<body>
+		<header>
+			<a href="../shouye/index.html"><img src="img/2_03.png" alt="" /></a>
+			<span>晒图</span>
+			<img id="kacha" src="img/2_05.png" alt="" />
+		</header>
+		<section>
+			<div id="banner">
+				<img src="img/2_09.png" alt="" />
+			</div>
+			<ul>
+				<li>
+					<img src="img/2_12.png" alt="" />
+					<span>　红姐丿</span>
+				</li>
+				<li>
+					<img src="img/2_15.png" alt="" />
+					<span>　84</span>
+				</li>
+				<li>
+					<img src="img/2_18.png" alt="" />
+					<span>&nbsp;400</span>
+				</li>
+				<li>
+					<img src="img/2_20.png"/>
+				</li>
+			</ul>
+			<ol>
+				<li>走自己的路，穿自己喜欢的衣服</li>
+				<li>05-21</li>
+				<li>举报</li>
+			</ol>
+		</section>
+		<footer>
+			<p>
+				<span style="color:#ff6600;">相识如初见：</span>　女神，女神，女神忠实粉丝，双击666，我要包养你，啦啦啦啦啦。
+			</p>
+			<span style="color:#333;">更多评论></span>
+		</footer>
+		
+		<div id="black">
+			
+		</div>
+		<ul id="lis">
+			<li>拍照</li>
+			<li><a href="fabu.html">照片</a></li>
+			<li id="foot">取消</li>
+		</ul>
+		<script>
+			var mev = document.getElementById("kacha");
+			var blk = document.getElementById("black");
+			var foot = document.getElementById("foot");
+			var lis = document.getElementById("lis");
+			mev.onclick = function(){
+				lis.style.display = "block";
+				blk.style.display = "block";
+			}
+			foot.onclick = function(){
+				lis.style.display = "none";
+				blk.style.display = "none";
+				
+			}
+		</script>
+	</body>
+</html>  

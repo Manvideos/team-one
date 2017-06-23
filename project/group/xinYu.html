@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no, email=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="xinYu.css"/>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<a onclick="window.history.back()"><</a>
+			<span>我的信誉</span>
+			<a href="#" style="visibility: hidden;"><</a>
+		</header>
+		<main>
+			<div>
+				<div></div>
+				<p id="p_text">信用中等</p>
+				<h2 id="h4">585</h2>
+			</div>
+			<p>
+				<span id="cle">晒晒分</span>
+				<span id="cli">了解分</span>
+			</p>
+			<ul>
+				<li style='border-right: 1px solid #ccc;'>
+					<p>信用守护</p>
+					<p>信用从这里开始</p>
+				</li>
+				<li>
+					<p>信用足迹</p>
+					<p>看记录&nbsp;积信用</p>
+				</li>
+			</ul>
+		</main>
+	</body>
+	<script type="text/javascript">
+	cle.onclick=function(){
+		h4.innerHTML=666;
+		h4.style.color="red";
+		p_text.innerText="信用高等";
+	}
+	
+	cli.onclick=function(){
+		time=setInterval(function(){
+			h4.innerHTML++;
+			if(h4.innerHTML==666){
+				h4.style.color="red";
+				clearInterval(time);
+			}
+			if(h4.innerHTML>=666){
+				h4.innerHTML=666;
+				p_text.innerText="反正我是信任你";
+			}
+		},100)
+	}
+	
+	</script>
+</html>

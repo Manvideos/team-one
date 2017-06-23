@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+html {
+  font-size: 62.5%; }
+
+#banner {
+  width: 100%;
+  height: 18rem;
+  position: relative; }
+  #banner img {
+    width: 100%;
+    height: 100%; }
+  #banner span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #fff;
+    position: absolute;
+    left: 3%;
+    top: 2%; }
+    #banner span a {
+      text-decoration: none;
+      color: #999; }
+  #banner div {
+    width: 25%;
+    height: 15%;
+    background: #d6d4d5;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    right: 0;
+    bottom: -6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    #banner div li {
+      width: 31px;
+      height: 31px;
+      cursor: pointer; }
+      #banner div li img {
+        width: 100%;
+        height: 100%; }
+
+#wenzi {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-flow: column;
+  font-size: 16px;
+  letter-spacing: 1px; }
+  #wenzi .top {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+    #wenzi .top span:nth-child(1) {
+      padding-right: 2rem; }
+  #wenzi .bottom {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    #wenzi .bottom p {
+      text-align: center;
+      line-height: 30px; }
+
+#tt2 {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around; }
+  #tt2 li {
+    width: 45%;
+    height: 20rem; }
+    #tt2 li img {
+      width: 100%;
+      height: 100%; }
+    #tt2 li p {
+      text-align: center;
+      line-height: 20px;
+      font-size: 1.4rem; }
+
+/*# sourceMappingURL=index1.css.map */

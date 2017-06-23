@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no, email=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="name.css"/>
+        <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div id="moTai">
+				<div>
+					<div class="p"></div>
+				</div>
+		</div>
+		<header>
+			<a onclick="window.history.back()"><</a> 
+			<span>实名认证</span>
+			<a href="#" style="visibility: hidden;"><</a>
+		</header>
+		<main>
+			<p><input type="text" placeholder="填写证件号" /></p>
+			<p><input type="text" placeholder="填写家庭详细住址" /></p>
+			<p><input type="text" placeholder="填写紧急联系人" /></p>
+			<p><input type="text" placeholder="填写手机号" /></p>
+			<p><input type="text" placeholder="填写邮政编码" /></p>
+			<p>个人详细信息</p>
+		</main>
+	</body>
+	<script type="text/javascript">
+		$("main p").eq(5).click(function(){
+			var inp = $("input");
+			for(var i=0; i<inp.length;i++){
+				if(inp[i].value.length == 0){
+					alert("请完善信息");
+					$("#moTai").css("display","none");
+					break;
+				}else{
+					$("#moTai").css("display","block");
+					$(".p").html('<table width="95%" border="1" cellpadding="10" cellspacing="0"><tr><td width="45%">证件号</td><td width="55%">'+$("input").eq(0).val()+'</td></tr><tr><td>详细地址</td><td>'+$("input").eq(1).val()+'</td></tr><tr><td>紧急联系人</td><td>'+$("input").eq(2).val()+'</td></tr><tr><td>手机号</td><td>'+$("input").eq(3).val()+'</td></tr><tr><td>邮政编码</td><td>'+$("input").eq(4).val()+'</td></tr></table>');
+				}
+			}
+		})
+		$("#moTai>div").click(function(){
+			$("#moTai").css("display","none");
+		})
+	</script>
+</html>

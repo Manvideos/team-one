@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="format-detection" content="telephone=no, email=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" type="text/css" href="location.css"/>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<a onclick="window.history.back()"><</a> 
+			<a href="address.html">+ 新增地址</a>
+		</header>
+		<table id="tab" border="1" cellspacing="0" cellpadding="10">
+			<tr>
+				<th>收货人</th>
+				<th>手机号</th>
+				<th>所在地</th>
+				<th>详细住址</th>
+			</tr>
+			<tr id="tr"></tr>
+		</table>
+		
+		<!--<div id="div">
+			<img src="images/8_03.png"/>
+			<p>请填写收货地址</p>
+		</div>-->
+		<script type="text/javascript">
+		var url1=decodeURIComponent(document.URL);
+		if(url1.indexOf("=")!=-1){
+				var a=url1.substr(url1.indexOf("?")+1);
+			//console.log(a)
+			var b=a.split("&");
+			//console.log(b)
+			var d ='';
+			console.log(url1)
+					for(var i=0;i<4;i++){
+						c=b[i].split("=")[1];
+						console.log(c);
+						d += "<td>"+c+"</td>";
+						console.log(d)
+					}
+					add(d)
+					function add(con){
+					document.getElementById("tr").innerHTML=con;
+				}
+		}else{
+				 console.log(url1)
+			}
+			
+			
+		</script>
+	</body>
+</html>

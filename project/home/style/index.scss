@@ -1,0 +1,194 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:"微软雅黑";
+}
+html,body,#box{
+    height:100%;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+}
+section{
+   height:100%;
+    overflow: hidden;
+}
+header,footer{
+    height:3rem;
+    background:blueviolet;
+}
+
+header{
+    background:#fff;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-around; 
+    a{
+        >img:first-child{
+            width:10%;
+            height:80%;
+        }
+        >img:last-child{
+            width:80%;
+            height:85%;
+        }
+    }
+    
+    >p{
+        font-size:1.8rem;
+
+        width:60%;
+        text-align:center;
+    }
+}
+
+
+section{
+    background:white;
+    width:100%;
+    >#wrapper{
+        >#banner{
+            img{
+                width:100%;
+            }
+        }
+        >ul{
+            margin:.5rem 0;
+            font-size:.5rem;
+            width:100%;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around; 
+        }
+        >ol{
+            width:90%;
+            margin:0 auto;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            >li{
+                width:50%;
+                border:1px solid #ccc;
+                border-left:none;
+                >ul{
+                    font-size:.5rem;
+                    display:flex;
+                    flex-flow:row nowrap;
+                    justify-content:space-around;
+                    
+                    >li{
+                        padding:.5rem 0;
+                        
+                        
+                        p{
+                            padding:.3rem 0; 
+                        }
+                        p:last-child{
+                            color:#FF4D22;
+                        }
+                        img{
+                            width:70%;
+                        }
+                    }
+                    >li:last-child{
+                        width:40%;
+                    }
+                }
+                >a{
+                    text-decoration: none;
+                    >ul{
+                    font-size:.5rem;
+                    display:flex;
+                    flex-flow:row nowrap;
+                    justify-content:space-around;
+                    
+                    >li{
+                        padding:.5rem 0;
+                        >p:first-child{
+                            color:#000000;
+                            
+                        }
+                        
+                        p{
+                            padding:.3rem 0; 
+                        }
+                        p:last-child{
+                            color:#FF4D22;
+                        }
+                        img{
+                            width:70%;
+                        }
+                    }
+                    >li:last-child{
+                        width:40%;
+                    }
+                }
+                }
+            }
+            >li:last-child{
+                border-right:none;
+            }
+        }
+        >aside{
+            padding:1rem 0;
+            width:90%;
+            margin:0 auto;
+            >p{
+                font-size:1.2rem;
+                padding-bottom:.5rem;
+            }
+            >div{
+                >ul{
+                    width:150%;
+                    display:flex;
+                    flex-flow:row nowrap;
+                    justify-content:space-between;
+                    >li{
+                        width:33.33%;
+                        >img{
+                            width:80%;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    
+}
+
+
+footer{
+    background: #fff;
+    border-top: 1px solid #eee;
+    ul{
+
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li{
+            text-align: center;
+            width: 20%;
+            >a{
+                text-decoration:none;
+                img{
+                    width: 35%;
+                    height: 30px;
+                }
+                span{
+                    
+                    color:#000;
+                    display:block;
+                    font-size: 14px;
+                }
+                >span:first-child{
+                    color:#B29062;
+                }
+            }
+        }
+    }
+}

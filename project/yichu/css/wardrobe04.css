@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #131313;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+    color: #131313;
+    font-family: "微软雅黑", Arial;
+    font-weight: 400;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 5rem;
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#wrapper {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    bottom: 0rem;
+    left: 0;
+    overflow: auto;
+}
+
+#box {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.left-back {
+    position: absolute;
+    left: 2.5%;
+    top: 1.7rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../img/04-left.png") no-repeat;
+    background-size: 50%;
+}
+
+.mian-top {
+    margin: 0 auto;
+    background: #fff;
+}
+
+.mian-top p span {
+    padding-right: 0.5rem;
+}
+
+.mian-top p {
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+}
+
+.tit-right {
+    float: right;
+    margin-left: auto;
+    margin-right: 20%;
+}
+
+.right-back {
+    position: absolute;
+    right: 0;
+    top: 1.7rem;
+    width: 4rem;
+    height: 4rem;
+    background: url("../img/04-right.png") no-repeat center;
+    background-size: 50%;
+    vertical-align: middle;
+}
+
+.mian-center {
+    margin-top: 0.5rem;
+    background: #fff;
+    font-size: 1.7rem;
+    color: #656565;
+}
+
+.box {
+    width: 95%;
+    margin: 0 auto;
+    /*font-size: 1rem;*/
+}
+
+.information {
+    padding: 1rem 0;
+    /*font-size: 2rem;*/
+}
+
+.commodity {
+    width: 100%;
+    font-size: 0.75rem;
+    overflow: auto;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.border-btm {
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.commodity-img {
+    width: 35%;
+    float: left;
+}
+
+.commodity-img img {
+    width: 100%;
+}
+
+.candice {
+    width: 55%;
+    float: left;
+    margin-left: 4%;
+    line-height: 2rem;
+}
+
+.candice-header {
+    font-size: 1.6rem;
+
+}
+
+.candice-top {
+    color: #7A7A7A;
+}
+
+.candice-tit {
+    color: #AAAAAA;
+}
+
+.box-goods > p {
+    padding: 1rem 0;
+    position: relative;
+}
+
+.box-goods > p > span:nth-child(2) {
+    color: #9D9D9D;
+    padding-right: 10%;
+    float: right;
+    z-index: 10;
+}
+
+.right-ba {
+    position: absolute;
+    right: 0;
+    top: 0.9rem;
+    width: 3rem;
+    height: 2rem;
+    background: url("../img/04-right.png") no-repeat center;
+    background-size: 50%;
+    vertical-align: middle;
+
+}
+
+.box-goods > .price > span:nth-child(2) {
+    padding-right: 1rem;
+}.box-goods > .price > span:nth-child(3) {
+    color: #BEA17C;
+}
+
+.price > span {
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    font-family: "宋体";
+    color: #A9A9A9;
+}
+.white-footer>p{ height: 5rem;
+    width: 95%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;}
+.white-footer{
+    margin-top: 0.5rem;
+    background: #fff;
+
+
+}
+.white-footer>p>a{
+    /*display: inline-block;*/
+    background: #A8834F;
+    color:#F2D6B1;
+    font-size: 1.5rem;
+    width: 20%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-family: Arial;
+    text-align: center;
+    margin-left: 10%;
+}
+.rec{
+    width: 100%;background: #fff;
+}
+.rec-box{
+    width: 95%;
+    margin: 0 auto;
+}
+.rec-top{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+.rec-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rec-list li{
+    width: 32%;
+}.rec-list li img{
+    width: 100%;
+}.rec-list li p{
+    padding-left: 0.5rem;
+}

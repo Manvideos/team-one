@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="../../js/angular.min.js"></script>
+    <script src="../../js/angular-ui-router.js"></script>
+    <style>
+        ul{
+            display: flex;
+        }
+        li{
+            width: 200px;
+            height: 50px;
+            border: 1px solid #000;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li ui-sref="first">按钮1</li>
+    <li ui-sref="second">按钮2</li>
+    <li ui-sref="third">按钮3</li>
+    <li ui-sref="four">按钮4</li>
+</ul>
+
+<div ui-view></div>
+
+<script>
+
+   var  app = angular.module("app",["ui.router"])
+
+   app.config(function ($stateProvider,$urlRouterProvider) {
+       $stateProvider
+          .state("first",{   // 配置a标签中的内容
+           url:"/first",                // 跳转的路径  a标签中的内容
+           templateUrl:"first.html"         // 跳转页面
+       }).state("second",{   // 配置a标签中的内容
+           url:"/second",                // 跳转的路径  a标签中的内容
+           templateUrl:"second.html"         // 跳转页面
+       }).state("third",{   // 配置a标签中的内容
+           url:"/third",                // 跳转的路径  a标签中的内容
+           templateUrl:"third.html"         // 跳转页面
+       }).state("four",{   // 配置a标签中的内容
+           url:"/four",                // 跳转的路径  a标签中的内容
+           templateUrl:"four.html"         // 跳转页面
+       }).state("first.first",{   // 配置a标签中的内容
+           url:"first.first",                // 跳转的路径  a标签中的内容
+           templateUrl:"1.html"         // 跳转页面
+       });
+       $urlRouterProvider.otherwise("/first");
+   });
+
+</script>
+
+</body>
+</html>

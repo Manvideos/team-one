@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>wardrobe</title>
+    <link rel="stylesheet" href="css/wardrobe03.css">
+</head>
+<body>
+<!--header-->
+<div id="header"><a href="wardrobe02.html">
+    <div class="left-back"></div>
+</a>
+    提交订单
+</div>
+<!--wrap-box-->
+<div id="wrapper">
+    <!--box-->
+    <div id="box">
+        <!--收货人地址Consignee address-->
+        <div class="mian-top">
+            <div class="box">
+                <p><span>收货人:</span><span>靖伟</span><span class="tit-right">15126927488</span></p>
+                <p><span>详细地址:</span><span>北京市昌平区马池口镇吉利大学</span></p>
+                <a href="javascript:;">
+                    <div class="right-back"></div>
+                </a>
+            </div>
+        </div>
+        <div class="mian-center">
+            <div class="box">
+                <!--商品信息 commodity information-->
+                <p class="information">商品信息</p>
+                <div class="commodity border-btm">
+                    <div class="commodity-img"><a href="javascript:;"><img src="img/04-04.png"></a></div>
+                    <div class="candice">
+                        <p class="candice-header">Candice</p>
+                        <p class="candice-top">租租匣时尚买手</p>
+                        <p class="candice-tit">
+                            淡蓝色系的网纱半裙凸显柔美时髦气质，A醒廓形很好的修饰身材，下摆的不对称设计展现个性气质，作为一件百搭单品，展现完美效果。
+                        </p>
+                    </div>
+                </div>
+                <!--商品goods-->
+                <div class="box-goods">
+                    <!--租赁时间 The term of the lease-->
+                    <p class="term border-btm">
+                        <span>租赁时间</span>
+                        <span>2017-05-20</span>
+                        <a href="javascript:;" class="right-ba"></a>
+                    </p>
+                    <p class="lease border-btm">
+                        <span>归还时间</span>
+                        <span>2017-05-25</span>
+                        <a href="javascript:;" class="right-ba"></a>
+                    </p>
+                    <!--留言tmail-->
+                    <p class="tmail border-btm">
+                        <span>留言</span>
+                        <span></span>
+                        <a href="javascript:;" class="right-ba"></a>
+
+                    </p>
+                    <!--优惠券discount-->
+                    <p class="discount border-btm">
+                        <span>优惠券</span>
+                        <span></span>
+                        <a href="javascript:;" class="right-ba"></a>
+                    </p>
+                    <!--价格price-->
+                    <p class="price">
+                        <span>共租1件商品</span>
+                        <span>小计:</span>
+                        <span>￥200.90</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--留白-->
+        <div class="white-footer">
+
+        </div>
+
+
+    </div>
+</div>
+<!--submit-->
+<div class="submit">
+    <div class="submit-left">
+        <p class="submit-p"><span>合计:</span><span>￥200.90</span></p>
+    </div>
+    <a href="wardrobe04.html"class="submit-right">
+            提交订单
+    </a>
+</div>
+
+<script src="js/iscroll.js"></script>
+<script>
+    document.addEventListener("touchmove",function (ev) {
+        ev.preventDefault();
+    },{passive:false});
+    var myIscroll = new IScroll('#wrapper',{
+        click: true,
+        tap: true
+    });
+    setTimeout(function () {
+        myIscroll.refresh();
+    }, 500)
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+header {
+  width: 90%;
+  padding: .6rem 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background: #fff; }
+  header input {
+    width: 70%;
+    border: none;
+    border-radius: 3rem;
+    background: #eee; }
+
+section {
+  background: #eee;
+  margin-top: 4rem;
+  margin-top: 4rem; }
+  section > ul {
+    width: 90%;
+    padding: 1rem 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-bottom: 1px solid; }
+    section > ul li {
+      padding: .4rem;
+      border-radius: 1rem; }
+    section > ul li:hover {
+      background: #FF4D22;
+      color: #fff; }
+  section ol {
+    width: 90%;
+    padding: .6rem 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background: #fff; }
+    section ol li > select {
+      background: #EEE;
+      padding: .6rem;
+      border-radius: .5rem; }
+  section > #content {
+    width: 90%;
+    padding: 5%; }
+    section > #content > ul {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      section > #content > ul > li {
+        padding: .6rem 0;
+        width: 45%; }
+        section > #content > ul > li > img {
+          width: 100%; }
+        section > #content > ul > li > p {
+          margin: .3rem 0;
+          font-size: .8rem; }
+          section > #content > ul > li > p > span {
+            float: right; }
+
+/*# sourceMappingURL=richang.css.map */

@@ -1,0 +1,205 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+html, body, #box {
+  height: 100%; }
+
+#box {
+  display: flex;
+  flex-flow: column; }
+
+main {
+  overflow: hidden;
+  height: 100%; }
+
+/*header {*/
+  /*width: 100%;*/
+  /*background: #fff;*/
+ /*height:5rem;*/
+/*}*/
+  /*header nav {*/
+    /*margin: 0 auto;*/
+    /*width: 95%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+    /*font-size: 26px; }*/
+    /*header nav img {*/
+      /*height: 2.1rem; }*/
+    /*header nav .yin {*/
+      /*visibility: hidden; }*/
+
+.maul {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none; }
+  .maul li {
+    width: 48%; }
+    .maul li img {
+      width: 100%; }
+    .maul li p {
+      margin-top: 10px;
+      font-size: 14px; }
+    .maul li .huida {
+      padding: 0px 6px;
+      border-radius: 8px;
+      color: #fff;
+      background: #B5824C; }
+    .maul li i {
+      display: inline-block;
+      width: 35px; }
+
+.tiao {
+  margin-top: 8px;
+  height: 8px;
+  background: #eee; }
+
+
+
+section {
+  width: 100%;
+  padding: 15px 0px; }
+  section .secdiv {
+    background: #eee;
+    padding-bottom: 5px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    section .secdiv img {
+      height: 80px;
+      width: 25%;
+      margin-top: 5px; }
+    section .secdiv div {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between; }
+      section .secdiv div .xiaop {
+        margin-top: 15px;
+        font-size: 11px; }
+        section .secdiv div .xiaop .wen {
+          padding: 0px 6px;
+          border-radius: 8px;
+          color: #fff;
+          background: #B5824C; }
+
+.navdiv {
+  padding: 10px 0px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navdiv span {
+    font-size: 15px;
+    color: #999; }
+  .navdiv .yin {
+    visibility: hidden; }
+  .navdiv p {
+    font-size: 20px; }
+
+.tudiv {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; }
+  .tudiv img {
+    width: 60%;
+    margin: 0 auto; }
+  .tudiv p {
+    font-size: 15px;
+    margin: 17px auto; }
+  .tudiv span {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 90px;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 0px 6px;
+    border-radius: 20px;
+    color: #fff;
+    background: #B5824C;
+    margin-bottom: 15px; }
+    .tudiv span a {
+      color: #fff; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.dier {
+  width: 90%;
+  margin: 0 auto; }
+  .dier p {
+    margin-top: 15px; }
+    .dier p .wen {
+      height: 35px;
+      line-height: 35px;
+      padding: 0px 6px;
+      border-radius: 6px;
+      color: #fff;
+      background: #B5824C; }
+    .dier p .huida {
+      height: 35px;
+      line-height: 35px;
+      padding: 0px 6px;
+      border-radius: 6px;
+      color: #fff;
+      background: #B5824C; }
+  .dier .neidiv {
+    background: #eee;
+    padding-bottom: 5px;
+    width: 95%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around; }
+    .dier .neidiv img {
+      height: 80px;
+      width: 25%;
+      margin-top: 5px; }
+    .dier .neidiv div {
+      width: 70%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around; }
+  .dier .lastdiv {
+    display: flex;
+    justify-content: space-between; }
+    .dier .lastdiv p {
+      display: flex;
+      align-items: center;
+      height: 30px; }
+      .dier .lastdiv p img {
+        height: 80%; }
+
+/*footer {*/
+  /*background: #fff;*/
+  /*position: fixed;*/
+  /*bottom: 0px;*/
+  /*width: 100%;*/
+  /*border-top: 1px solid #eee;*/
+  /*padding: 3px 0px; }*/
+  /*footer ul {*/
+    /*width: 100%;*/
+    /*list-style: none;*/
+    /*display: flex;*/
+    /*justify-content: space-between; }*/
+    /*footer ul li {*/
+      /*text-align: center;*/
+      /*width: 20%; }*/
+      /*footer ul li img {*/
+        /*width: 35%;*/
+        /*height: 30px; }*/
+      /*footer ul li span {*/
+        /*display: block;*/
+        /*font-size: 14px; }*/
+      /*footer ul li .color {*/
+        /*color: #B5824C; }*/
+
+/*# sourceMappingURL=scss.css.map */

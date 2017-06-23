@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>wardrobe</title>
+    <link rel="stylesheet" href="css/wardrobe06.css">
+</head>
+<body>
+<!--header-->
+<div id="header"><a href="wardrobe05.html">
+    <div class="left-back"></div>
+</a>
+    支付成功
+</div>
+<!--wrap-box-->
+<div id="wrapper">
+    <!--box-->
+<div class="box">
+    
+    <div class="pig">
+        <img src="img/6_03.png">
+        <a class="btn" onclick="window.history.back()">
+            确认
+        </a>
+    </div>
+</div>
+</div>
+
+
+<!--安卓下点击a标签不跳转的解决办法，是不用href做跳转的链接，改为用JS控制跳转
+
+1 <a href="javascript:;" ontouchstart="window.location.href='https://www.baidu.com/'"><img src="xxx"></a>
+这样写虽然解决了安卓下点击a标签不跳转的问题，但还是没有解决点击a标签，在手机真机上会调出手机键盘的行为
+
+
+
+不过将a标签换成div，就可以做到在手机真机上不会再调出手机键盘了
+
+<div ontouchstart="window.location.href='http://https://www.baidu.com/'"><img src="xxx"></div>-->
+
+<script src="js/iscroll.js"></script>
+<script>
+    document.addEventListener("touchmove",function (ev) {
+        ev.preventDefault();
+    },{passive:false});
+    var myIscroll = new IScroll('#wrapper',{
+        click: true,
+        tap: true
+    });
+    setTimeout(function () {
+        myIscroll.refresh();
+    }, 500)
+</script>
+</body>
+</html>

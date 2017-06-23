@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body,#box{
+    height: 100%;
+}
+#box{
+    display: flex;
+    flex-flow: column;
+    
+}
+main{
+    overflow: hidden;
+    height: 100%;
+}
+header{
+      
+       width: 100%;
+       background: #fff;
+       position: fixed;
+       top: 0px;
+       
+    nav{
+       margin: 0 auto;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        line-height: 50px;
+        font-size:26px;
+        img{
+            height: 2.1rem;
+        }
+        .yin{
+            visibility: hidden;
+        }
+    }
+}
+.maul{
+   
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    li{
+        
+        width: 48%;
+    
+       
+        img{
+            width: 100%;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .wen{
+           
+           
+        }
+        .huida{
+            
+            padding: 0px 6px;
+            border-radius: 8px;
+            color: #fff;
+            background: #B5824C;
+        }
+        i{
+            display: inline-block;
+            width: 35px;
+        }
+    }
+} 
+
+.tiao{
+    margin-top: 8px;
+    height: 8px;
+    background: #eee;
+}
+main{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+section{
+    width: 100%;
+    padding: 15px 0px;
+    .secdiv{
+        background: #eee;
+        padding-bottom: 5px;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        img{
+            height: 80px;
+            width: 25%;
+            margin-top: 5px;
+        }
+        div{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            .xiaop{
+                margin-top: 15px;
+                font-size: 11px;
+                .wen{
+            padding: 0px 6px;
+            border-radius: 8px;
+            color: #fff;
+            background: #B5824C;
+           
+        }
+            }
+        }
+    }
+}
+.navdiv{
+    padding: 10px 0px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-size: 15px;
+        color: #999;
+    }
+    .yin{
+        visibility: hidden;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.tudiv{
+    width: 100%;
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+    img{width: 60%;
+    margin: 0 auto;}
+    p{
+       
+        font-size: 15px;
+         margin: 17px auto;
+    }
+    span{
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        width: 90px;
+          font-size: 17px;
+           margin: 0 auto;
+           padding: 0px 6px;
+            border-radius: 20px;
+            color: #fff;
+            background: #B5824C;
+            margin-bottom: 15px;
+         a{
+             color: #fff;
+         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+.dier{
+    width: 90%;
+    margin: 0 auto;
+    p{
+        margin-top: 15px;
+        .wen{
+            height: 35px;
+            line-height: 35px;
+             padding: 0px 6px;
+            border-radius: 6px;
+            color: #fff;
+            background: #B5824C;
+        }
+        .huida{
+             height: 35px;
+             line-height: 35px;
+             padding: 0px 6px;
+            border-radius: 6px;
+            color: #fff;
+            background: #B5824C;
+        }
+    }
+    .neidiv{
+         background: #eee;
+        padding-bottom: 5px;
+        width: 95%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-around;
+        img{
+            height: 80px;
+            width: 25%;
+            margin-top: 5px;
+        }
+        div{
+            width: 70%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+        }
+    }
+    .lastdiv{
+        display: flex;
+        justify-content: space-between;
+        p{
+            display: flex;
+            align-items: center;
+            height: 30px;
+            img{
+                height: 80%;
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #fff;
+    position: fixed;
+    bottom:0px ;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding: 3px 0px;
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li{
+            text-align: center;
+            width: 20%;
+            img{
+                width: 35%;
+                height: 30px;
+            }
+            span{
+                display: block;
+                font-size: 14px;
+            }
+            .color{
+                color: #B5824C; 
+            }
+        }
+    }
+}
+

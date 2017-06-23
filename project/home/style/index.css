@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+html, body, #box {
+  height: 100%; }
+
+#box {
+  display: flex;
+  flex-direction: column; }
+
+section {
+  height: 100%;
+  overflow: hidden; }
+
+header, footer {
+  height: 3rem;
+  background: blueviolet; }
+
+header {
+  background: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  header a > img:first-child {
+    width: 10%;
+    height: 80%; }
+  header a > img:last-child {
+    width: 80%;
+    height: 85%; }
+  header > p {
+    font-size: 1.8rem;
+    width: 60%;
+    text-align: center; }
+
+section {
+  background: white;
+  width: 100%; }
+  section > #wrapper > #banner img {
+    width: 100%; }
+  section > #wrapper > ul {
+    margin: .5rem 0;
+    font-size: .5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
+  section > #wrapper > ol {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    section > #wrapper > ol > li {
+      width: 50%;
+      border: 1px solid #ccc;
+      border-left: none; }
+      section > #wrapper > ol > li > ul {
+        font-size: .5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around; }
+        section > #wrapper > ol > li > ul > li {
+          padding: .5rem 0; }
+          section > #wrapper > ol > li > ul > li p {
+            padding: .3rem 0; }
+          section > #wrapper > ol > li > ul > li p:last-child {
+            color: #FF4D22; }
+          section > #wrapper > ol > li > ul > li img {
+            width: 70%; }
+        section > #wrapper > ol > li > ul > li:last-child {
+          width: 40%; }
+      section > #wrapper > ol > li > a {
+        text-decoration: none; }
+        section > #wrapper > ol > li > a > ul {
+          font-size: .5rem;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around; }
+          section > #wrapper > ol > li > a > ul > li {
+            padding: .5rem 0; }
+            section > #wrapper > ol > li > a > ul > li > p:first-child {
+              color: #000000; }
+            section > #wrapper > ol > li > a > ul > li p {
+              padding: .3rem 0; }
+            section > #wrapper > ol > li > a > ul > li p:last-child {
+              color: #FF4D22; }
+            section > #wrapper > ol > li > a > ul > li img {
+              width: 70%; }
+          section > #wrapper > ol > li > a > ul > li:last-child {
+            width: 40%; }
+    section > #wrapper > ol > li:last-child {
+      border-right: none; }
+  section > #wrapper > aside {
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto; }
+    section > #wrapper > aside > p {
+      font-size: 1.2rem;
+      padding-bottom: .5rem; }
+    section > #wrapper > aside > div > ul {
+      width: 150%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+      section > #wrapper > aside > div > ul > li {
+        width: 33.33%; }
+        section > #wrapper > aside > div > ul > li > img {
+          width: 80%; }
+
+footer {
+  background: #fff;
+  border-top: 1px solid #eee; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; }
+    footer ul li {
+      text-align: center;
+      width: 20%; }
+      footer ul li > a {
+        text-decoration: none; }
+        footer ul li > a img {
+          width: 35%;
+          height: 30px; }
+        footer ul li > a span {
+          color: #000;
+          display: block;
+          font-size: 14px; }
+        footer ul li > a > span:first-child {
+          color: #B29062; }
+
+/*# sourceMappingURL=index.css.map */

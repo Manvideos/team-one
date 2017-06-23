@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/index1.css" />
+	</head>
+	<body ng-controller="myCtrl">
+		<div id="box">
+			<header></header>
+				<main>
+					<div ng-repeat="items in datas.arr1">
+					
+						<div id="banner">
+							<img ng-src="img/{{items.banner}}">
+							<span onclick="window.history.back()"><</span>
+							<div><li><img ng-src="img/{{items.t1}}" alt=""></li><li><img ng-src="img/{{items.t2}}" alt=""></li></div>
+						</div>
+						<div id="wenzi">
+							<div class="top">
+								<span>{{items.span}}</span>
+							</div>
+							<div class="bottom">
+								<li ng-repeat="items in datas.divbottom">
+									<p>{{items.p}}</p>
+									<p>{{items.p1}}</p>
+								</li>
+							</div>
+						</div>
+						
+						<div id="tt2" style="height:25rem;">
+							<li>
+								<img ng-src="img/{{items.tu1}}" alt="">
+								<p>荷叶领背心上衣</p>
+								<p>M  S  XS</p>
+								<p><span class="iconfont icon-click"></span> 64</p>
+							</li>
+							<li>
+								<img ng-src="img/{{items.tu2}}" alt="">
+								<p>白色短袖条纹针织上衣</p>
+								<p>S  XS</p>
+								<p><span class="iconfont icon-click"></span> 92</p>
+							</li>
+						</div>
+					</div>
+				</main>
+			<footer></footer>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route1.4.5.js"></script>
+	<script>
+
+		var app = angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope,$location,$http){
+			$http.get("../js/ind.json").success(function(data){
+				console.log(data);
+				$scope.datas= data;
+			});
+		});
+//		$(".herf").click(function(){
+//			window.history.back()
+//		});
+//
+	</script>
+</html>

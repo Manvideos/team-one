@@ -1,0 +1,80 @@
+<main>
+    <div>
+        <ul class="maul">
+            <li ng-repeat="items in datas.arr"><img onclick="window.location.href='../community/GCX/Gwendaxiangxi/index1.html'" ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" />
+                <p>问&nbsp;&nbsp;{{items.p}}</p>
+                <p><span class="huida">回答</span>&nbsp;{{items.p1}}</p>
+            </li>
+            <li ng-repeat="items in datas.info"><img onclick="window.location.href='../community/GCX/Gwendaxiangxi/index3.html'" ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" />
+                <p>问&nbsp;&nbsp;{{items.p}}</p>
+                <p><span class="huida">回答</span>&nbsp;{{items.p1}}</p>
+            </li>
+        </ul>
+        <p class="tiao"></p>
+        <section>
+            <div class="secdiv" ng-repeat="items in datas.arr1">
+                <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" alt="" />
+                <div>
+                    <p class="xiaop"><span class="wen">大家说</span>&nbsp;{{items.p}}</p>
+                    <p>{{items.p1}}<br /></p>
+                </div>
+            </div>
+        </section>
+        <p class="tiao"></p>
+        <div class="navdiv" ng-repeat="items in datas.arr2">
+            <span class="yin">更多></span>
+            <p>{{items.p}}</p>
+            <span>{{items.span}}</span>
+        </div>
+        <div class="tudiv" ng-repeat="items in datas.arr22">
+            <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" alt="" />
+            <p>{{items.p}}</p>
+						<span>
+							<a href="">{{items.a}}</a>
+						</span>
+        </div>
+        <p class="tiao"></p>
+        <div class="dier" onclick="tiao1()" ng-repeat="items in datas.arr3">
+            <p><span class="wen">问</span>&nbsp;&nbsp;{{items.p}}</p>
+            <p><span class="huida">回答</span>&nbsp;&nbsp;{{items.p1}}</p>
+            <div class="neidiv" onclick="window.location.href='../community/GCX/Gwendaxiangxi/index1.html'">
+                <img  ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" alt="" />
+                <div>
+                    <p>{{items.p2}}</p>
+                    <p>{{items.p3}}</p>
+                </div>
+            </div>
+            <div class="lastdiv">
+                <p>
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img1}}">&nbsp;&nbsp;
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img2}}">&nbsp;&nbsp;
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img3}}">&nbsp;&nbsp;
+                    3回答
+                </p>
+                <p><img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img4}}" alt="" />&nbsp;&nbsp;{{items.span}}</p>
+            </div>
+        </div>
+        <p class="tiao"></p>
+        <div class="dier" onclick="tiao1()" ng-repeat="items in datas.arr4">
+            <p><span class="wen">问</span>&nbsp;&nbsp;{{items.p}}</p>
+            <p><span class="huida">回答</span>&nbsp;&nbsp;{{items.p1}}</p>
+            <div class="neidiv" onclick="window.location.href='../community/GCX/Gwendaxiangxi/index2.html'">
+                <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img}}" alt="" />
+                <div>
+                    <p>{{items.p2}}</p>
+                    <p>{{items.p3}}</p>
+                </div>
+            </div>
+            <div class="lastdiv">
+                <p>
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img1}}">&nbsp;&nbsp;
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img2}}">&nbsp;&nbsp;
+                    <img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img3}}">&nbsp;&nbsp;
+                    3回答
+                </p>
+                <p><img ng-src="../community/GCX/Gmeiribikan/img1/{{items.img4}}" alt="" />&nbsp;&nbsp;{{items.span}}</p>
+            </div>
+        </div>
+        <p class="tiao"></p>
+    </div>
+</main>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../插件/iscroll.js"></script>
+		<link rel="stylesheet" href="scss2.css" />
+	</head>
+	<body>
+		<div id="box">
+				<header>
+			<nav>
+					<a onclick="window.history.back(-2)"><img src="images/h1.png"/></a>
+				<p>问答详细</p>
+				<img src="images/h2.png" alt="" />
+			</nav>
+		</header>
+		<main>
+			<div>
+		<section class="sec1">
+			<div class="neidiv">
+					<img src="images/sct1.png" alt="" />
+					<div>
+						<p>香奈儿2017最新款连衣裙短</p>
+						<p>￥15999</p>
+					</div></div>
+			<div class="pinzan">
+				<p>评论</p>
+				<p>赞</p>
+			</div>		
+				</section>	
+				
+				<section class="sec2">
+				<div class="sec2div1">
+				<img src="images/t2.png" alt=""  class="firstimg"/>
+				<div class="div">
+				    <div>
+				    <p>的****放</p>
+				 
+					<span>3天前</span>
+					</div>
+					<div>
+						<p>我的身材和你差不多，这是我上次去参加别<br />的公司的晚会穿的衣服，你可以参考一下。</p>
+					</div>
+					<img src="images/sc1.png" alt="" class="lastimg" />
+				</div>
+			</div>
+			</section>
+					<section class="sec3">
+				<div class="sec2div1">
+				<img src="images/t2.png" alt=""  class="firstimg"/>
+				<div class="div">
+				    <div>
+				    <p>过****就</p>
+				 
+					<span>5天前</span>
+					</div>
+					<div>
+						<p>尽量穿高跟鞋，这样会给人视觉上的高度<br />不会看出很矮</p>
+					</div>
+					
+				</div>
+			</div>
+			</section>
+				</div>
+		</main>
+		<footer>
+			<div>
+				<img src="images/f1.png" alt="" />
+				<p>我来回答</p>
+			</div>
+		</footer>
+		</div>
+			<script>
+				document.addEventListener("touchmove",function (ev) {
+					ev.preventDefault();
+				},{passive:false});
+			var myScroll=new IScroll("main",{
+				click:true,
+				tap:true
+			})
+			
+		</script>
+	</body>
+</html>

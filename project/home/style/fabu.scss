@@ -1,0 +1,74 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-family:"微软雅黑";
+}
+body{
+    background:#EEEEEE;
+}
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    background:#fff;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:.6rem 0;
+    >a{
+        color:#000;
+        display:block;
+        width:20%;
+        text-align:center;
+        text-decoration:none;
+    }
+}
+section{
+    margin-top:2.5rem;
+    >textarea{
+        background:#EEEEEE;
+        width:90%;
+        height:10rem;
+        border:none;
+        padding:5%;
+    }
+    >p{
+        width:90%;
+        padding:2% 5%;
+        a{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+            color:#000;
+            text-decoration:none ;
+        }
+        
+        border:1px solid;
+        border-left:none;
+        border-right:none;
+    }
+    >ul{
+        width:90%;
+        padding:5%;
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-between;
+        >li{
+            width:22%;
+            height:5rem;
+            
+            >img{
+                width:100%;
+                height:100%;
+            }
+        }
+        >li:nth-child(2){
+            border:1px solid;
+            font-size:5rem;
+            text-align:center;
+            line-height:4rem;
+        }
+    }
+}
